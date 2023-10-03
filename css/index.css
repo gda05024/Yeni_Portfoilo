@@ -1246,6 +1246,9 @@ progress[role]:after {
     padding-left: 25%
   }
 
+  #about {
+    padding: 30px;
+  }
   #about .all .left {
     width: 100%;
     text-align: center;
@@ -1387,7 +1390,6 @@ progress[role]:after {
       }
 
       #title h2 {
-        padding-top: 150px;
         font-size: 15px;
         line-height: 2;
         padding-left: 0;
@@ -1435,6 +1437,10 @@ progress[role]:after {
 
       #about .profile2 {
         width: 100%;
+      }
+
+      #portfoilo {
+        padding: 35px;
       }
 
       #portfoilo .skills2 {
@@ -1490,6 +1496,10 @@ progress[role]:after {
         top: 350px;
       }
 
+      #portfoilo3 {
+        padding: 35px;
+      }
+
       #john i {
         width: 10%;
       }
@@ -1498,7 +1508,12 @@ progress[role]:after {
         flex-wrap: wrap;
       }
 
+      #contact {
+        padding: 35px;
+      }
+      
       #contact form {
         width: 100%;
       }
+
     }

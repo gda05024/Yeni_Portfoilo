@@ -18,17 +18,35 @@
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
-			if ($(window).width() > 767) {
-				$("#title").prepend("<div class='header_in'></div>");
-				$(".header_in").prepend("<span class='ham'></div>");
+			function toggleHeader() {
+        if ($(window).width() < 767) {
+            // 이미 바인딩된 click 이벤트 핸들러를 제거합니다.
+            $(".ham").off("click");
 
-				$(".ham").click(function () {
-					$("header").toggle({ "display": "block", "width": "50%" });
-				});
-			} else {
-				$("#title .header_in").css("display", "none");
-				$("#title .header_in .ham").css("display", "none");
-			}
+            $("#title").prepend("<div class='header_in'></div>");
+            $(".header_in").prepend("<span class='ham'></span>");
+
+            // 클릭 이벤트 핸들러를 다시 바인딩합니다.
+						$(".ham").click(function () {
+							if ($(window).width() < 767) {
+									// 작은 화면에서만 실행할 코드
+									$("header").toggle({ "display": "block", "width": "50%" });
+							}
+					});
+        } else {
+            // 작은 화면일 때는 header_in과 ham 요소를 숨깁니다.
+            $(".header_in").css("display", "none");
+        }
+    }
+
+    // 페이지 로딩 시 toggleHeader 함수를 실행하여 초기 설정을 수행합니다.
+    toggleHeader();
+
+    // 화면 크기가 변경될 때마다 toggleHeader 함수를 다시 실행하여 화면 크기에 맞게 설정을 업데이트합니다.
+    $(window).resize(function () {
+        toggleHeader();
+    });
+			
 			// 대메뉴 클릭
 
 			var po1 = Math.floor($("#title").offset().top);
@@ -548,12 +566,12 @@
 					<h3>프로젝트</h3>
 					<div class="project_main_img">
 						<h4>프로젝트 구조</h4>
-						<img src="../portfolio6/img/structure.jpg" alt="">
+						<img src="../Yeni_Portfoilo/img/structure.jpg" alt="">
 					</div>
 					<div class="project_information">
 						<h4>원 패브릭 서비스</h4>
-						<img src="../portfolio6/img/erp_img.png" alt="">
-						<img src="../portfolio6/img/erp_information.png" alt="">
+						<img src="../Yeni_Portfoilo/img/erp_img.png" alt="">
+						<img src="../Yeni_Portfoilo/img/erp_information.png" alt="">
 					</div>
 				</div>
 			</div>
