@@ -910,7 +910,7 @@ progress[role]:after {
 #portfoilo3 .portfoilo_warpper h3 {
   font-size: 22px;
   color: #000;
-  margin: 24px 0;
+  margin: 12px 0;
 }
 
 #portfoilo3 .portfoilo_warpper h3::before {
@@ -940,9 +940,22 @@ progress[role]:after {
   margin: 4px 0 14px 14px;
 }
 
+#portfoilo3 .portfoilo_warpper ul li .ft24 {
+  font-size: 24px;
+}
+
+#portfoilo3 .portfoilo_warpper ul li .pt24 {
+  padding-top: 24px;
+}
+
 #portfoilo3 .portfoilo_warpper ul li .ft12 {
   font-size: 14px;
 }
+
+#portfoilo3 .portfoilo_warpper ul li .p24 {
+  padding-left: 24px;
+}
+
 
 #portfoilo3 .portfoilo_warpper .career {
   margin-bottom: 14px;
@@ -978,6 +991,10 @@ progress[role]:after {
   height: fit-content;
 }
 
+#portfoilo3 .portfoilo_warpper .career .carrer_introduce {
+  padding-bottom: 60px;
+}
+work_period
 #portfoilo3 .portfoilo_warpper .career .carrer_introduce .dot::before {
   content: '';
   width: 4px;
@@ -1303,6 +1320,7 @@ progress[role]:after {
     right: 100px;
     top: 200px;
   }
+}
 
   @media screen and (max-width:768px) {
 
@@ -1379,7 +1397,7 @@ progress[role]:after {
     footer {
       padding-left: 0px;
     }
-
+  }
     @media screen and (max-width:420px) {
       header {
         width: 100%;
