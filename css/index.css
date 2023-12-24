@@ -940,6 +940,18 @@ progress[role]:after {
   margin: 4px 0 14px 14px;
 }
 
+#portfoilo3 .portfoilo_warpper ul li .career_results a {
+  color: #636466;
+  margin: 4px 0 14px 14px;
+  font-size: 14px;
+}
+
+#portfoilo3 .portfoilo_warpper ul li .career_results  span{
+  color: #636466;
+  font-size: 8px;
+  margin-right: 4px;
+}
+
 #portfoilo3 .portfoilo_warpper ul li .ft24 {
   font-size: 24px;
 }
